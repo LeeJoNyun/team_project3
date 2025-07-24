@@ -1,14 +1,20 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+import '@fontsource/inter/400.css';  // 일반 두께
+import '@fontsource/inter/700.css';  // 볼드 두께
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
   /* other styles */
-  
+  header{
+    width:100%;
+  }
   body {
+    width:100%;
     font-size: 16px;
     line-height: 1.6;
-    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    font-family: 'Pretendard Variable', sans-serif;
     color:#333;
   }
   a {
