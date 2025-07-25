@@ -14,17 +14,16 @@ const VisualSwiper = () => {
     <>
       <Swiper
         modules={[Autoplay, Pagination]}
-        // spaceBetween={30}
         slidesPerView={1}
         loop={true}
-        // autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 3000 }}
         pagination={{
           clickable: true,
         }}
       >
         {arr.map((item, idx) => (
-          <SwiperSlide>
-            <SlideItem key={idx} data={item} />
+          <SwiperSlide key={idx}>
+            <SlideItem data={item} />
           </SwiperSlide>
         ))}
       </Swiper>
