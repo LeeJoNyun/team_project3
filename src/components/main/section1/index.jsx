@@ -5,7 +5,7 @@ const Section1 = () => {
   return (
     <Section1Style>
       <div className="inner">
-      <SectionSwiper />
+        <SectionSwiper />
       </div>
     </Section1Style>
   );
