@@ -73,7 +73,7 @@ const SectionSwiper = () => {
         viewBox="0 0 60 60"
         fill="none"
       >
-        <g clip-path="url(#clip0_162_1509)">
+        <g clipPath="url(#clip0_162_1509)">
           <path
             fillRule="evenodd"
             clipRule="evenodd"

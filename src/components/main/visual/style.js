@@ -54,5 +54,9 @@ export const SwiperItem = styled.article`
         font-weight: 900;
         box-sizing:border-box;
         line-height: 40px;
+        &:hover{
+            border: 1px solid #FFF;
+            background: #333;
+        }
     }
 `;

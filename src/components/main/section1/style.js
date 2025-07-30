@@ -16,11 +16,13 @@ export const Section1Style = styled.section`
             .swiper-wrapper{
                 width: 100%;
                 height:100%;
+                box-sizing:border-box;
             }
             .swiper-slide{
                 display: flex;
                 justify-content: space-around;
                 align-items : center;
+                box-sizing:border-box;
                 .left{ 
                     width: 1000px;
                     height:100%;
@@ -76,7 +78,7 @@ export const Section1Style = styled.section`
 
             .swiper-pagination{
             position: absolute;
-            left:499px;
+            left:513px;
             bottom: 0; 
             display: flex;
             justify-content:center;

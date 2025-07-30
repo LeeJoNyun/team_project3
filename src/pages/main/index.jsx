@@ -1,4 +1,9 @@
-import { VisualSwiper, Section1 } from "../../components/main";
+import {
+  VisualSwiper,
+  Section1,
+  Section2,
+  Section3,
+} from "../../components/main";
 import { VisualStyle } from "./style";
 
 const Main = () => {
@@ -6,6 +11,8 @@ const Main = () => {
     <VisualStyle>
       <VisualSwiper />
       <Section1 />
+      <Section2 />
+      <Section3 />
     </VisualStyle>
   );
 };
