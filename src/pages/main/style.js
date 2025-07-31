@@ -7,7 +7,6 @@ export const VisualStyle = styled.div`
         width:100vw;
         height:100%;
         position: relative;
-        overflow: visible; /* ← 핵심! */
         padding-bottom : 16px;
         .swiper-slide{
             img:nth-child(1), 

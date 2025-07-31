@@ -3,10 +3,14 @@ import styled from 'styled-components';
 export const Section2Style = styled.section`
     background: #FFF9F3;
     height:600px;
-    padding: 200px 0;
+    position:relative;
     .inner{
+        position:absolute;
+        top: 50%;
+        left:50%;
+        transform:translateX(-50%) translateY(-50%);
         height: 451px;
-        border:1px solid #000;
+        
         display:flex;
         justify-content: flex-start;
         flex-direction: column;
@@ -28,7 +32,7 @@ export const Section2Style = styled.section`
             justify-content: space-between;
             
             article{
-                border:1px solid #000;
+                
                 width: 300px;
                 height: 277px;
                 display: flex;
@@ -65,10 +69,21 @@ export const Section2Style = styled.section`
                         height: 19px;
                         display: flex;
                         justify-content : space-between;
+                        align-items:center;
                         i{
                             cursor: pointer;
                             width: 15px;
                             height: 15px; 
+                            display: flex;
+                            justify-content: center;
+                            align-items:center;
+                        }
+                        .page{
+                            color: #000;
+                            text-align: center;
+                            font-family: Inter;
+                            font-size: 16px;
+                            font-weight: 500;
                         }
                     }
                     .more{
@@ -77,7 +92,8 @@ export const Section2Style = styled.section`
                         display: flex;
                         align-items:center;
                         justify-content:center;
-                        border: 1px solid #333;
+                        border : 1px solid #000;
+                        
                         &:hover{
                             color : #FFF;
                             background: #333;
@@ -104,7 +120,6 @@ export const Section3SwiperItemStyle = styled.div`
     height: 277px;
     display: flex;
     flex-flow:column;
-    border : 1px solid #000;
     position:relative;
     img{
         display: block;
@@ -131,6 +146,8 @@ export const Section3SwiperItemStyle = styled.div`
             display: flex;
             justify-content:space-between;
             align-items:center;
+            position:relative;
+            bottom:3px;
             .price{
                 color: #2D2D2D;
                 font-family: Pretendard;
@@ -138,6 +155,7 @@ export const Section3SwiperItemStyle = styled.div`
                 font-weight: 500;
             }
             .order{
+                opacity:0;
                 width:83px;
                 height: 25px;
                 border-radius: 50px;
@@ -155,7 +173,11 @@ export const Section3SwiperItemStyle = styled.div`
                 .plus, .min{
                     cursor: pointer;
                 }
+                &.visible {
+                    opacity :1;
+                }
             }
         }
     }
+  
 `;

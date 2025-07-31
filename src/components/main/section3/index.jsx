@@ -5,13 +5,17 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import SectionSwiperItem from "./SectionSwiperItem";
+import { useSelector } from "react-redux";
 
 const index = () => {
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
   const swiperRef = useRef(null);
+  const { breads } = useSelector((state) => state.section3);
+  const [currentPage, setCurrentPage] = useState(1);
+  const totalGroups = Math.ceil(breads.length / 4);
 
   useEffect(() => {
     if (swiperRef.current && swiperRef.current.swiper) {
@@ -23,6 +27,7 @@ const index = () => {
       swiperRef.current.swiper.navigation.update();
     }
   }, []);
+
   return (
     <Section2Style>
       <div className="inner">
@@ -54,6 +59,9 @@ const index = () => {
                     />
                   </svg>
                 </i>
+                <span className="page">
+                  {currentPage}/{totalGroups}
+                </span>
                 <i>
                   <svg
                     className="swiper-button swiper-custom-button-next"
@@ -81,14 +89,19 @@ const index = () => {
             modules={[Navigation, Pagination]}
             className="mySwiper"
             slidesPerView={4}
+            slidesPerGroup={4}
             navigation={{
               prevEl: navigationPrevRef.current,
               nextEl: navigationNextRef.current,
             }}
+            onSlideChange={(swiper) => {
+              const currentGroup = Math.floor(swiper.activeIndex / 4) + 1;
+              setCurrentPage(currentGroup);
+            }}
           >
-            {[...Array(4)].map((_, idx) => (
+            {breads.map((item, idx) => (
               <SwiperSlide key={idx}>
-                <SectionSwiperItem />
+                <SectionSwiperItem data={item} />
               </SwiperSlide>
             ))}
           </Swiper>

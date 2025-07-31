@@ -1,7 +1,11 @@
-// import { configureStore } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
+import section3 from "./modules/section3Slice";
+import section4 from "./modules/section4Slice";
+const store = configureStore({
+  reducer: {
+    section3,
+    section4,
+  },
+});
 
-// const store = configureStore({
-//   reducer: {},
-// });
-
-// export default store;
+export default store;
