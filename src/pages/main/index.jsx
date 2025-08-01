@@ -5,6 +5,9 @@ import {
   Section3,
   Section4,
   Section5,
+  Section6,
+  Section7,
+  Section8,
 } from "../../components/main";
 import { VisualStyle } from "./style";
 
@@ -17,6 +20,9 @@ const Main = () => {
       <Section3 />
       <Section4 />
       <Section5 />
+      <Section6 />
+      <Section7 />
+      <Section8 />
     </VisualStyle>
   );
 };

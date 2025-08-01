@@ -14,7 +14,7 @@ export const Section5Style = styled.section`
             background-size: contain;
             width:498px;
             height:498px;
-            opacity: 0.5;
+            opacity: 0.2;
             position:absolute;
             left:50%;
             top:50%;
@@ -34,38 +34,77 @@ export const Section5Style = styled.section`
                 background-color: #FAAC59;
             }
         }
-        .text-area{
-            strong{
-                font-size: 80px;
-                line-height: 84px;
-                font-weight:700;
-                aspect-ratio: 20/21;
-                color : #FAAC59;
-                margin-right: 40px;
-                position:relative;
-                
-            }
-            .dot{
-                display: inline-block;
-                    width:18px;
-                    height:18px;
-                    border-radius:100%;
-                    background-color: #FAAC59;
-                    position:absolute;
-                    left:41%;
-                    top:-20px;
-                    transform:translateX(-50%);
+        .con-box{
+            position:absolute;
+            left: 70px;
+            top:50%;
+            transform:translateY(-50%);
+            width:710px;
+            height: 217px;
+            display: flex;
+            flex-flow: column;
+            gap:40px;
+            .text-area{
+                strong{
+                    font-size: 80px;
+                    line-height: 84px;
+                    font-weight:700;
+                    aspect-ratio: 20/21;
+                    color : #FAAC59;
+                    margin-right: 40px;
+                    position:relative;
+                    
                 }
-            .last{
-                margin-right: 20px;
+                .dot{
+                    display: inline-block;
+                        width:18px;
+                        height:18px;
+                        border-radius:100%;
+                        background-color: #FAAC59;
+                        position:absolute;
+                        left:41%;
+                        top:-20px;
+                        transform:translateX(-50%);
+                    }
+                .last{
+                    margin-right: 20px;
+                }
+                span{
+                    color: rgba(51, 51, 51, 0.80);
+                    font-family: Inter;
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: 70px; /* 194.444% */
+                }
             }
-            span{
-                color: rgba(51, 51, 51, 0.80);
-                font-family: Inter;
-                font-size: 36px;
-                font-weight: 700;
-                line-height: 70px; /* 194.444% */
+            .text-area2{
+                strong{
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 64px;
+                    font-weight: 700;
+                    background-color:#FAAC59;
+                }
+                span{
+                    color: rgba(51, 51, 51, 0.80);
+                    font-family: Inter;
+                    font-size: 48px;
+                    font-weight: 700;
+                    line-height: 70px; /* 145.833% */
+                }
             }
+        }
+
+        .snack{
+            position:absolute;
+            right: 73px;
+            bottom: 103px;
+            width: 668px;
+            height: 392px;
+            border-radius:25px;
+            background-image: url('/images/snack.jpg');
+            background-position: -250px -67px;
+        
         }
     }
 
