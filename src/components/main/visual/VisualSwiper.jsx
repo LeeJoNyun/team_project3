@@ -13,6 +13,7 @@ const VisualSwiper = () => {
   return (
     <>
       <Swiper
+        className="visual-swiper"
         modules={[Autoplay, Pagination]}
         slidesPerView={1}
         loop={true}

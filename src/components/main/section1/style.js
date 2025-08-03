@@ -78,7 +78,7 @@ export const Section1Style = styled.section`
 
             .swiper-pagination{
             position: absolute;
-            left:513px;
+            left:18px;
             bottom: 0; 
             display: flex;
             justify-content:center;
@@ -95,6 +95,7 @@ export const Section1Style = styled.section`
             }
             .swiper-pagination-bullet-active{
                 flex : 2;
+                background: #686868;
             }
         }
 

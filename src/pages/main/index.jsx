@@ -1,5 +1,5 @@
 import {
-  VisualSwiper,
+  Visual,
   Section1,
   Section2,
   Section3,
@@ -14,7 +14,7 @@ import { VisualStyle } from "./style";
 const Main = () => {
   return (
     <VisualStyle>
-      <VisualSwiper />
+      <Visual />
       <Section1 />
       <Section2 />
       <Section3 />

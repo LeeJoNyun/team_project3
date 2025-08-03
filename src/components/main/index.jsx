@@ -1,4 +1,4 @@
-export { default as VisualSwiper } from "./visual/VisualSwiper";
+export { default as Visual } from "./visual";
 export { default as Section1 } from "./section1";
 export { default as Section2 } from "./section2";
 export { default as Section3 } from "./section3";
