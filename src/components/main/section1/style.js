@@ -70,6 +70,12 @@ export const Section1Style = styled.section`
                             line-height:40px;
                             text-align:center;
                             border:1px solid #000;
+                            &:hover{
+                                &:hover{
+                                    background: #333;
+                                    color : #fff;
+                                }
+                            }
                         }
                     }
                     
@@ -79,7 +85,7 @@ export const Section1Style = styled.section`
             .swiper-pagination{
             position: absolute;
             left:18px;
-            bottom: 0; 
+            bottom: 5px; 
             display: flex;
             justify-content:center;
             align-items:center;
@@ -89,7 +95,7 @@ export const Section1Style = styled.section`
             
             .swiper-pagination-bullet{
                 width: auto;
-                height:10px;
+                height:4px;
                 border-radius : 50px;
                 flex : 1;
             }

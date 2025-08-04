@@ -40,7 +40,7 @@ export const Section7Style = styled.section`
                     font-family: Inter;
                     font-size: 36px;
                     font-weight: 700;
-                    line-height: 80px; /* 222.222% */
+                    line-height: 50px; 
                 }
                 .text-box1{
                     display: flex;

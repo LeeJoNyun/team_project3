@@ -46,7 +46,7 @@ export const Section5Style = styled.section`
             gap:40px;
             .text-area{
                 strong{
-                    font-size: 80px;
+                    font-size: 96px;
                     line-height: 84px;
                     font-weight:700;
                     aspect-ratio: 20/21;

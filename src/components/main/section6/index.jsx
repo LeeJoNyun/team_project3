@@ -31,7 +31,7 @@ const Section6 = () => {
       </ul>
 
       <div className="more-area">
-        <div className="more">선물 센트 전체보기</div>
+        <div className="more">선물 세트 전체보기</div>
       </div>
     </Section6Style>
   );
