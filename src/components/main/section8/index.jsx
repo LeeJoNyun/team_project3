@@ -77,6 +77,17 @@ const Section8 = () => {
                 <span className="info">21.11.26 ~ 21.12.05 </span>
               </article>
             </SwiperSlide>
+            <SwiperSlide>
+              <img src="/images/con8-3.png" alt="" />
+              <article className="third">
+                <strong>태극당x마더그라운드x서울메이드</strong>
+                <div>
+                  <span>태극당과 마더그라운드 서울메이드가 함께 만든</span>
+                  <span>1946 프로젝트 쇼케이스 </span>
+                </div>
+                <span className="info">21.11.26 ~ 21.12.05 </span>
+              </article>
+            </SwiperSlide>
           </Swiper>
         </div>
       </div>
