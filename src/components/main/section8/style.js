@@ -3,9 +3,8 @@ import styled from "styled-components";
 export const Section8Style = styled.section`
 padding-bottom:200px;
     .inner{
-        
         height: 438px;
-        /* overflow:visible; */
+        overflow:visible;
         display: flex;
         justify-content: center;
         flex-wrap:wrap;
@@ -45,14 +44,8 @@ padding-bottom:200px;
             height: 300px;
 
             .swiper{
-                /* width: 1920px; */
                 width: 100%;
-            }
-            .swiper-wrapper{
-                display: flex;
-                justify-content: center;
-                gap:50px;
-               
+                overflow:visible;
             }
             .swiper-slide{
                 display: flex;

@@ -51,7 +51,7 @@ export const Section5Style = styled.section`
                     font-weight:700;
                     aspect-ratio: 20/21;
                     color : #FAAC59;
-                    margin-right: 40px;
+                    margin-right: 30px;
                     position:relative;
                     
                 }
@@ -78,7 +78,9 @@ export const Section5Style = styled.section`
                 }
             }
             .text-area2{
-                strong{
+                .accent{
+                    display: inline-block;
+                    position:relative;
                     color: #FFF;
                     font-family: Inter;
                     font-size: 64px;

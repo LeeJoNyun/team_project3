@@ -12,9 +12,9 @@ const Section5 = () => {
   useGSAP(
     () => {
       const dots = gsap.utils.toArray(".dot");
-
+      const accents = gsap.utils.toArray(".accent");
       dots.forEach((dot, index) => {
-        const animation = gsap.fromTo(
+        gsap.fromTo(
           dot,
           { width: 18, height: 18 },
           {
@@ -26,21 +26,33 @@ const Section5 = () => {
             ease: "power2.inOut",
             paused: true, // 처음에 일시 정지 상태로 시작
             delay: index * 0.5,
+            scrollTrigger: {
+              trigger: dot,
+              start: "top 80%",
+              end: "top 20%",
+              toggleActions: "play none restart none",
+              markers: false, // 디버깅용
+            },
           }
         );
-
-        // ScrollTrigger 설정
-        ScrollTrigger.create({
-          trigger: dot,
-          start: "top 80%",
-          end: "top 20%",
-          toggleActions: "play none restart none",
-          markers: false, // 디버깅용
-          animation,
-        });
       });
 
-      ScrollTrigger.refresh();
+      accents.forEach((item, index) => {
+        gsap.from(item, {
+          y: 100,
+          opacity: 0,
+          duration: 0.5,
+          ease: "power2.inOut",
+          delay: index * 0.3, // 각 요소마다 0.3초 지연
+          scrollTrigger: {
+            trigger: item,
+            start: "top 80%",
+            end: "top 20%",
+            toggleActions: "play none restart none",
+          },
+        });
+      });
+      // ScrollTrigger.refresh();
     },
     { scope: main }
   );
@@ -69,9 +81,9 @@ const Section5 = () => {
             <span>에서</span>
           </div>
           <div className="text-area2">
-            <strong>마음</strong>
+            <strong className="accent">마음</strong>
             <span> 과 </span>
-            <strong>정성</strong>
+            <strong className="accent">정성</strong>
             <span> 을 전해드립니다.</span>
           </div>
         </div>

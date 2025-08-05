@@ -36,7 +36,7 @@ const Section8 = () => {
         </div>
         <div className="bottom">
           <Swiper
-            slidesPerView="auto" // 한 화면에 보여지는 슬라이드 개수
+            slidesPerView={2} // 한 화면에 보여지는 슬라이드 개수
             spaceBetween={30}
             navigation // 좌우 화살표 사용 가능
             pagination={{ clickable: true }} // 페이지네이션(점) 사용 가능
@@ -64,17 +64,6 @@ const Section8 = () => {
                   <span>세상에서 가장 오래된 게임 '바람의나라' 의 만남</span>
                 </div>
                 <span className="info">23.01.11 ~ 23.01.31</span>
-              </article>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/images/con8-3.png" alt="" />
-              <article className="third">
-                <strong>태극당x마더그라운드x서울메이드</strong>
-                <div>
-                  <span>태극당과 마더그라운드 서울메이드가 함께 만든</span>
-                  <span>1946 프로젝트 쇼케이스 </span>
-                </div>
-                <span className="info">21.11.26 ~ 21.12.05 </span>
               </article>
             </SwiperSlide>
             <SwiperSlide>
